@@ -16,6 +16,8 @@ const request = require('request')
      
 //  })
 
+
+
 const geocodingUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/rwefwf.json?access_token=pk.eyJ1Ijoia2ludGFtYTUxMCIsImEiOiJjazh5YzRqNmwwYTVvM2hydWpobjMyOWQ2In0.d_yMLmDHXAQfFdEX42b-pg&limit=1'
 
 request({ url: geocodingUrl, json: true }, (error, response) => {
@@ -30,3 +32,10 @@ request({ url: geocodingUrl, json: true }, (error, response) => {
      }
 })
 
+const geocode = (address, callback) => {
+
+}
+
+geocode('Da Nang', (error, data) => {
+
+})
